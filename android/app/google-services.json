@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684840167747",
+    "project_id": "dailydevotional1-33a2f",
+    "storage_bucket": "dailydevotional1-33a2f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684840167747:android:6358f2d65553e39350e7f6",
+        "android_client_info": {
+          "package_name": "com.example.daily_devotional_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgVWY7dUV4VRbZkqDw03SPlHhyYsXdiMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
