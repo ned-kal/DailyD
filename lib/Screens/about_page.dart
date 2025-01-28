@@ -146,7 +146,7 @@ class AboutPage extends StatelessWidget {
                             ),
                             SizedBox(height: 10),
                             Text(
-                              "This devotional is thoughtfully compiled to enrich the prayer lives of families, offering guidance, inspiration, and a deeper connection with God.\nCreated as a support for family altars, it aims to \n"
+                              "This devotional is thoughtfully compiled to enrich the prayer lives of families, offer guidance, inspiration, and a deeper connection with God.\nCreated as a support for family altars, it aims to \n"
                               "1. Foster daily prayer and scripture study.\n"
                               "2. Provide insights for spiritual growth and understanding.\n"
                               "3. Unite families in faith and worship",
