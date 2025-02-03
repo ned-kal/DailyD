@@ -37,6 +37,12 @@ android {
         versionName "1.0"
     }
 
+    def keyProperties = new Properties()
+    def keyPropertiesFile = rootProject.file('key.properties')
+    if (keyPropertiesFile.exists()) {
+    keyProperties.load(new FileInputStream(keyPropertiesFile))
+    }
+
      signingConfigs {
         release {
             storeFile file(keyProperties['storeFile'])
