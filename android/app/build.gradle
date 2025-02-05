@@ -4,7 +4,6 @@ plugins {
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
 }
-
 android {
     compileSdkVersion 34
     namespace = "com.example.daily_devotional_1"
@@ -45,7 +44,8 @@ android {
 
      signingConfigs {
         release {
-            storeFile file(keyProperties['storeFile'])
+           // storeFile file(keyProperties['storeFile'])
+           storeFile file(keyProperties['storeFile'])
             storePassword keyProperties['storePassword']
             keyAlias keyProperties['keyAlias']
             keyPassword keyProperties['keyPassword']
