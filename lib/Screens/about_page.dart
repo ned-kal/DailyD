@@ -175,7 +175,7 @@ class AboutPage extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 15,
                                 height: 1.5,
-                                color: Colors.black87,
+                                color: Color.fromARGB(181, 0, 0, 0),
                               ),
                             ),
                           ],
