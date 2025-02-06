@@ -170,7 +170,7 @@ class AboutPage extends StatelessWidget {
                             Text(
                               "Have questions, feedback, or want to get involved? Reach out to us at:\n\n"
                               "📧 Email: bz-alil@outlook.com\n"
-                              "🌐 Website: www.bz-alil.Kharizgroup.ng.ng\n"
+                              "🌐 Website: www.bz-alil.Kharizgroup.ng\n"
                               "📞 Phone: +2348057171954",
                               style: TextStyle(
                                 fontSize: 15,
