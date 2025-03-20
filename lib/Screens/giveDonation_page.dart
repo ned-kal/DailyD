@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DonationPage extends StatefulWidget {
+  const DonationPage({super.key});
+
   @override
   DonationPageState createState() => DonationPageState();
 }

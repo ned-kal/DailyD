@@ -1,0 +1,2 @@
+C:/flutterApps/learning5/Daily_Devotional_1/daily_devotional_1/android/app/.cxx/Debug/124w4xu1/x86/CMakeFiles/edit_cache.dir
+C:/flutterApps/learning5/Daily_Devotional_1/daily_devotional_1/android/app/.cxx/Debug/124w4xu1/x86/CMakeFiles/rebuild_cache.dir

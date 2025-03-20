@@ -1,5 +1,5 @@
-import 'package:daily_devotional_1/Screens/first_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../Screens/onboarding_screen.dart'; // Ensure the correct import for OnboardingFlow
 
 class SideMenu extends StatelessWidget {
@@ -41,13 +41,13 @@ class SideMenu extends StatelessWidget {
             leading: const Icon(
               Icons.home,
               color: Color.fromARGB(255, 17, 100, 20),
-              ),
+            ),
             title: const Text(
               'Home',
               style: TextStyle(
-                color:Color.fromARGB(255, 17, 100, 20)
+                color: Color.fromARGB(255, 17, 100, 20),
               ),
-              ),
+            ),
             onTap: () {
               Navigator.pushReplacementNamed(context, '/home');
             },
@@ -57,11 +57,13 @@ class SideMenu extends StatelessWidget {
               leading: const Icon(
                 Icons.settings,
                 color: Color.fromARGB(255, 17, 100, 20),
-                ),
+              ),
               title: const Text(
                 'Admin',
-                style: TextStyle(color: Color.fromARGB(255, 17, 100, 20),),
+                style: TextStyle(
+                  color: Color.fromARGB(255, 17, 100, 20),
                 ),
+              ),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/login');
               },
@@ -70,13 +72,13 @@ class SideMenu extends StatelessWidget {
             leading: const Icon(
               Icons.book,
               color: Color.fromARGB(255, 17, 100, 20),
-              ),
+            ),
             title: const Text(
               'Onboarding',
               style: TextStyle(
                 color: Color.fromARGB(255, 17, 100, 20),
               ),
-              ),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -90,51 +92,70 @@ class SideMenu extends StatelessWidget {
             leading: const Icon(
               Icons.heat_pump_rounded,
               color: Color.fromARGB(255, 7, 95, 22),
-              ),
+            ),
             title: const Text(
               'Give/Donations',
               style: TextStyle(
                 color: Color.fromARGB(255, 7, 95, 22),
               ),
-              ),
+            ),
             onTap: () {
-              // Add logout functionality here
               Navigator.pushReplacementNamed(context, '/give');
             },
           ),
-           ListTile(
+          ListTile(
             leading: const Icon(
               Icons.room_preferences_rounded,
               color: Color.fromARGB(255, 7, 95, 22),
-              ),
+            ),
             title: const Text(
               'About App',
               style: TextStyle(
                 color: Color.fromARGB(255, 7, 95, 22),
               ),
-              ),
+            ),
             onTap: () {
-              // Add logout functionality here
               Navigator.pushReplacementNamed(context, '/about');
             },
           ),
-           ListTile(
+          ListTile(
             leading: const Icon(
               Icons.exit_to_app,
               color: Color.fromARGB(255, 207, 45, 4),
-              ),
+            ),
             title: const Text(
               'Logout',
               style: TextStyle(
                 color: Color.fromARGB(255, 207, 45, 4),
               ),
-              ),
+            ),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const FirstScreen(),
-                ),
+              // Show a confirmation dialog when Logout is tapped
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: const Text('Logout'),
+                    content: const Text('Do you want to close the app?'),
+                    actions: [
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(context).pop(); // Dismiss dialog if No
+                        },
+                        child: const Text('No'),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          // Close the app if Yes is pressed
+                          // Note: SystemNavigator.pop() works for Android.
+                          
+                          SystemNavigator.pop();
+                        },
+                        child: const Text('Yes'),
+                      ),
+                    ],
+                  );
+                },
               );
             },
           ),

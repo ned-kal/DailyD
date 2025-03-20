@@ -3,6 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AdminPage extends StatefulWidget {
+  const AdminPage({super.key});
+
   @override
   _AdminPageState createState() => _AdminPageState();
 }
@@ -13,9 +15,12 @@ class _AdminPageState extends State<AdminPage> {
   final TextEditingController _monthController = TextEditingController();
   final TextEditingController _dayController = TextEditingController();
   final TextEditingController _topicController = TextEditingController();
-  final TextEditingController _bibleController = TextEditingController(); // Bible Reference
-  final TextEditingController _wordController = TextEditingController(); // Word of the Day
-  final TextEditingController _prayerHeadingController = TextEditingController();
+  final TextEditingController _bibleController =
+      TextEditingController(); // Bible Reference
+  final TextEditingController _wordController =
+      TextEditingController(); // Word of the Day
+  final TextEditingController _prayerHeadingController =
+      TextEditingController();
   final TextEditingController _prayerBodyController = TextEditingController();
 
   void _uploadWriteup() async {
@@ -127,14 +132,16 @@ class _AdminPageState extends State<AdminPage> {
               ),
               const SizedBox(height: 16),
               TextField(
-                controller: _bibleController, // Correct controller for Bible Reference
+                controller:
+                    _bibleController, // Correct controller for Bible Reference
                 decoration: const InputDecoration(
                   labelText: 'Bible Reference of the Day',
                 ),
               ),
               const SizedBox(height: 16),
               TextField(
-                controller: _wordController, // Correct controller for Word of the Day
+                controller:
+                    _wordController, // Correct controller for Word of the Day
                 decoration: const InputDecoration(
                   labelText: 'Word of the Day',
                 ),

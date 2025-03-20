@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AdminDashboard extends StatelessWidget {
+  const AdminDashboard({super.key});
+
   Future<void> addDaysToMonth(String month, int days) async {
     final firestore = FirebaseFirestore.instance;
 

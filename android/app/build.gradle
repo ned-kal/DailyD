@@ -8,7 +8,8 @@ android {
     compileSdkVersion 34
     namespace = "com.example.daily_devotional_1"
    // compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "29.0.13113456-beta1"
+   // "23.1.7779620"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
