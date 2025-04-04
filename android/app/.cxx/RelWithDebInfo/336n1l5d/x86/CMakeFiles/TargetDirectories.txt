@@ -1,0 +1,2 @@
+C:/Users/Odyssey/OneDrive/Desktop/myDailyD/DailyD/android/app/.cxx/RelWithDebInfo/336n1l5d/x86/CMakeFiles/edit_cache.dir
+C:/Users/Odyssey/OneDrive/Desktop/myDailyD/DailyD/android/app/.cxx/RelWithDebInfo/336n1l5d/x86/CMakeFiles/rebuild_cache.dir

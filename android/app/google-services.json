@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:684840167747:android:6358f2d65553e39350e7f6",
+        "mobilesdk_app_id": "1:684840167747:android:cf01c1730d12b55050e7f6",
         "android_client_info": {
-          "package_name": "com.example.daily_devotional_1"
+          "package_name": "com.rootsandwires.dailydevotional"
         }
       },
       "oauth_client": [],

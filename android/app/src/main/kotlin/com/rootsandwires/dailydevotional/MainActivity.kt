@@ -1,4 +1,4 @@
-package com.example.daily_devotional_1
+package com.rootsandwires.dailydevotional
 
 import io.flutter.embedding.android.FlutterActivity
 
